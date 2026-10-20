@@ -81,4 +81,4 @@ that version is released, and the date at the top will change.
 
 ## Contact
 
-Questions about privacy: [garipovdinar@gmail.com](mailto:garipovdinar@gmail.com)
+Questions about privacy: [garipov.dinar@gmail.com](mailto:garipov.dinar@gmail.com)

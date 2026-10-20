@@ -120,4 +120,4 @@ Sections 2 to 5 and 10 continue to apply after that.
 
 ## Contact
 
-Questions about these terms: [garipovdinar@gmail.com](mailto:garipovdinar@gmail.com)
+Questions about these terms: [garipov.dinar@gmail.com](mailto:garipov.dinar@gmail.com)

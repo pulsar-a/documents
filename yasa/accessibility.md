@@ -79,5 +79,5 @@ General without restarting.
 
 ## Tell us what doesn't work
 
-If something in Yasa is hard or impossible to use for you, write to [garipovdinar@gmail.com](mailto:garipovdinar@gmail.com). Please mention your Mac's macOS version
+If something in Yasa is hard or impossible to use for you, write to [garipov.dinar@gmail.com](mailto:garipov.dinar@gmail.com). Please mention your Mac's macOS version
 and the assistive technology or setting you use.
