@@ -45,7 +45,7 @@ animation, and rows, cards and the menu bar popover appear and move without slid
 
 Everything in Yasa works without a mouse, including moving cards on a board.
 
-| | |
+| Action | Shortcut |
 |---|---|
 | Command palette: every command by name | ⌘K |
 | All shortcuts | ? |

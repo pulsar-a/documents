@@ -1,0 +1,45 @@
+<!doctype html>
+{%- assign url_parts = page.url | split: "/" -%}
+{%- assign app = nil -%}
+{%- if url_parts.size > 1 -%}{%- assign app = site.data.apps | where: "id", url_parts[1] | first -%}{%- endif -%}
+{%- assign is_home = false -%}
+{%- if page.url == "/" -%}{%- assign is_home = true -%}{%- endif -%}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>{% if is_home %}{{ site.title }}{% else %}{{ page.title | default: site.title }}{% endif %}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="author" content="{{ site.author }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="{{ '/' | relative_url }}"{% if is_home %} aria-current="page"{% endif %}>{{ site.title }}</a>
+        {%- if app %}
+        <span class="sep" aria-hidden="true">/</span>
+        <span class="app-name">{{ app.name }}</span>
+        {%- endif %}
+      </nav>
+      {%- if app %}
+      <nav class="tabs" aria-label="{{ app.name }} documents">
+        {%- for doc in app.documents %}
+        <a href="{{ doc.url | relative_url }}"{% if page.url == doc.url %} aria-current="page"{% endif %}>{{ doc.title }}</a>
+        {%- endfor %}
+      </nav>
+      {%- endif %}
+    </div>
+  </header>
+
+  <main class="wrap content{% if is_home %} home{% endif %}">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">© {{ site.time | date: "%Y" }} {{ site.author }}</div>
+  </footer>
+</body>
+</html>

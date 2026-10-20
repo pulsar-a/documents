@@ -1,3 +1,17 @@
 title: Documents
 description: Privacy policies, terms and other legal documents for my apps.
-theme: jekyll-theme-primer
+author: Dinar Garipov
+
+# GitHub Pages turns these on by itself; they are listed so a local `jekyll build` matches it.
+plugins:
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+  - jekyll-default-layout
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

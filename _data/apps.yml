@@ -1,0 +1,13 @@
+# Apps and their documents. The layout uses this for each app's navigation:
+# a page belongs to the app whose `id` is its first URL folder (/yasa/privacy/ → yasa).
+- id: yasa
+  name: Yasa
+  documents:
+    - title: Privacy
+      url: /yasa/privacy/
+    - title: Terms
+      url: /yasa/terms/
+    - title: Accessibility
+      url: /yasa/accessibility/
+    - title: Support
+      url: /yasa/support/
