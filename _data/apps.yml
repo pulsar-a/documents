@@ -11,3 +11,14 @@
       url: /yasa/accessibility/
     - title: Support
       url: /yasa/support/
+- id: craters-inc
+  name: Craters Inc.
+  documents:
+    - title: Privacy
+      url: /craters-inc/privacy/
+    - title: Terms
+      url: /craters-inc/terms/
+    - title: Accessibility
+      url: /craters-inc/accessibility/
+    - title: Support
+      url: /craters-inc/support/
