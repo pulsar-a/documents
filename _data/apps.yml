@@ -22,3 +22,14 @@
       url: /craters-inc/accessibility/
     - title: Support
       url: /craters-inc/support/
+- id: uku
+  name: Uku
+  documents:
+    - title: Privacy
+      url: /uku/privacy/
+    - title: Terms
+      url: /uku/terms/
+    - title: Accessibility
+      url: /uku/accessibility/
+    - title: Support
+      url: /uku/support/
