@@ -8,13 +8,14 @@ Need help with Uku, found a document it doesn't show right, or have an idea? Wri
 
 **Email: [garipov.dinar@gmail.com](mailto:garipov.dinar@gmail.com)**
 
-I'm a single developer and answer every message myself, usually within a few days.
+I'm a single developer and read every message myself. I try to answer within a few days.
 
 ## What to include
 
 To help me answer quickly, please mention:
 
-- your Uku version (⋯ ▸ **About Uku**);
+- your Uku version (⋯ ▸ **About Uku**; on a Mac, **Uku ▸ About Uku** in the menu bar);
+- where you got Uku (Microsoft Store, Mac App Store or a download);
 - your operating system and its version (for example Windows 11, macOS 15.4 or Ubuntu 24.04);
 - what you did, what you expected and what happened instead;
 - a screenshot, if it helps to show the problem;
@@ -22,23 +23,30 @@ To help me answer quickly, please mention:
 
 Please don't send whole documents unless I ask, and only if you're comfortable sharing what's in them.
 
-If Uku ran into an error, its log can help: Settings ▸ Advanced ▸ **Open log folder**. Log files contain warnings,
-errors and file paths, nothing else; look them over before you send them.
+If Uku ran into an error, its log can help: Settings ▸ Advanced ▸ **Open log folder**. Log files hold warnings and errors
+with their technical details, which can include the paths and names of your files and folders. Look them over before
+you send them, and leave out anything you'd rather not share.
 
 ## Common questions
 
-- **Where are my settings?** Settings ▸ Advanced ▸ **Open settings folder**. Uninstalling Uku keeps them; delete that
-  folder to start fresh.
-- **A picture from the web shows as a placeholder.** That's on purpose: Uku doesn't download anything, so reading a
-  document never contacts a website. Click the placeholder to open the picture in your browser.
+- **Where are my settings?** Settings ▸ Advanced ▸ **Open settings folder**. Uninstalling Uku doesn't always remove
+  them; to start fresh, quit Uku and delete that folder.
+- **A picture from the web shows as a placeholder.** That's on purpose: loading a picture from a website tells that
+  website that the document was opened, so Uku asks first. Click the placeholder and choose **Load picture**, or
+  **Load pictures** in the bar above the page for all of the document's. To always load them, set Settings ▸ Reading ▸
+  **Pictures from the web** to **Allow**.
 - **I deleted a file by mistake.** Uku moves deleted files and folders to your system's Trash or Recycle Bin: restore
-  it from there.
+  it from there. (Where a drive has no Recycle Bin, Windows asks before deleting for good.)
+- **My edits were saved without asking.** Autosave is on by default: Uku saves your edits a moment after you stop
+  typing and when you leave the document. You can turn it off in Settings ▸ General.
 - **The page jumped or didn't update.** Uku shows a file again when it changes on disk and keeps your place; if it
   didn't, press F5 to reload, and please tell me how it happened.
+- **How do I connect an AI agent?** ⋯ ▸ **Connect an AI agent…** (Settings ▸ AI agents). The
+  [Privacy Policy](privacy-policy.md#ai-agents) explains what a connected agent can see.
 
 ## Purchases
 
-Uku has no in-app purchases and no ads. There's nothing to buy, restore or refund.
+Uku is free. It has no in-app purchases and no ads, so there's nothing to buy, restore or refund.
 
 ## More
 

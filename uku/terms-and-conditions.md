@@ -4,7 +4,7 @@ permalink: /uku/terms/
 
 # Uku: Terms and Conditions
 
-**Last updated: October 24, 2026**
+**Last updated: November 4, 2026**
 
 These terms apply to your use of Uku, a Markdown reader for Windows, macOS and Linux made by Dinar Garipov ("I", "me"),
 in every edition I distribute. By installing or using Uku you agree to these terms. If you don't agree, don't install
@@ -15,13 +15,16 @@ or use Uku.
 > - **Uku is provided "as is", without any warranty.** Use it at your own risk.
 > - **I am not liable for any loss or damage from using Uku, including any loss of data**, to the fullest extent the
 >   law allows.
-> - **Your files are on your computer and are your responsibility.** Uku edits, renames, moves and deletes them when
->   you ask it to: keep your own backups.
+> - **Your files are on your computer and are your responsibility.** Uku edits, saves, renames, moves and deletes them
+>   as you use it: keep your own backups.
+> - **AI agents you connect to Uku, and the services they use, are not mine.** What they do with your documents is
+>   between you and them.
 
 ## 1. License to use Uku
 
-I grant you a personal, non-exclusive, non-transferable, revocable license to install and use Uku on devices you own or
-control. You may not sell, rent or sublicense Uku, copy it for others, or remove copyright notices from it. Uku's source
+I grant you a personal, non-exclusive, non-transferable, revocable license to install and use the official builds of
+Uku that I publish (in the Microsoft Store, the Mac App Store, or on Uku's website and GitHub releases) on devices you
+own or control. You may not sell, rent or sublicense Uku, copy it for others, or remove copyright notices from it. Uku's source
 code is not part of this license.
 
 If you get Uku from an app store, that store's license terms also apply. Where they conflict with these terms about
@@ -43,15 +46,22 @@ developing or distributing Uku at any time without notice.
 Uku works on the files and folders you open, where they are (see the [Privacy Policy](privacy-policy.md)). I have no
 copy of them and no way to recover them. You alone are responsible for:
 
-- **keeping backups** of your documents. Uku saves your edits into the original file, ticks task boxes in it, and
-  renames, moves and deletes files and folders when you ask it to. A deleted file goes to your system's Trash or
-  Recycle Bin, but that is your system's feature, not a guarantee;
+- **keeping backups** of your documents. Uku saves your edits into the original file (by default automatically, a
+  moment after you stop typing; you can turn autosave off in Settings), ticks task boxes in it, and renames, moves and
+  deletes files and folders when you ask it to. A deleted file goes to your system's Trash or Recycle Bin, but that is
+  your system's feature, not a guarantee; where there is none, Windows may delete it for good after asking you;
 - **changes made by other programs.** Uku shows a file again when it changes on disk; when you have unsaved edits it
   asks before replacing them, but files changed by other editors, sync tools or scripts at the same time can still
   conflict;
 - **sync services** you use (iCloud Drive, Dropbox, OneDrive, network drives and others). Conflicts, overwrites, lost
   or corrupted files caused by them, or by how Uku works with them, are your risk;
-- **links** you open from documents, and the websites, files and apps behind them;
+- **links** you open from documents, and the websites, files and apps behind them, and **pictures from the web** you
+  choose to load;
+- **AI agents** you connect to Uku. When you add Uku to an agent in Settings ▸ AI agents, Uku runs that agent's own
+  command or changes its settings file to do so. A connected agent can search and read your Markdown files through Uku,
+  and may send what it reads to its provider. The agents, their providers and what they do are not under my control;
+- **updates** you choose to install in the editions that update themselves: Uku downloads them from GitHub, checks
+  them and replaces its own files when it quits;
 - checking that Uku is suitable for your purpose, and that what it shows is what the file says. Don't rely on Uku's
   rendering of a document for anything where a misread could cause harm (for example medical, legal, safety or
   financial information).
@@ -84,11 +94,14 @@ law allows.
 To the extent the law allows, you agree to hold me harmless from claims, losses and costs (including reasonable legal
 fees) arising from your use or misuse of Uku, or your breach of these terms.
 
-## 6. Third-party components
+## 6. Third-party components and services
 
 Uku includes third-party open-source components, each under its own license; they are listed with their licenses in
 the app, under **About Uku ▸ Open-source licenses**. Those licenses apply to those components, and their authors give
 no warranty either.
+
+Third-party services you use with Uku, such as app stores, GitHub, sync services, websites and AI agents and their
+providers, are governed by their own terms. I am not responsible for them.
 
 ## 7. Changes to these terms
 
