@@ -4,7 +4,7 @@ permalink: /uku/privacy/
 
 # Uku: Privacy Policy
 
-**Last updated: November 4, 2026**
+**Last updated: November 11, 2026**
 
 Uku is a Markdown reader for Windows, macOS and Linux made by Dinar Garipov ("I", "me"). This policy explains what
 happens to your information when you use Uku.
@@ -26,6 +26,9 @@ Uku opens the Markdown files and folders you choose, reads them where they are a
 back to the same file. It doesn't copy or upload your documents anywhere. Diagrams, math, syntax highlighting and
 everything else on the page are drawn on your computer.
 
+**Read aloud** uses the voices installed on your computer, through your system's own speech (on Windows, Windows'
+speech voices). Uku never sends the text to an online speech service.
+
 Searching your files reads them on your computer when you search. Uku doesn't build or keep a search index on disk.
 
 If your files are in a cloud folder such as iCloud Drive, Dropbox, OneDrive or on a network drive, that service syncs
@@ -43,7 +46,8 @@ where they are and opens them.
 | macOS | `~/Library/Application Support/Uku` (in the Mac App Store edition, inside the app's container, `~/Library/Containers/app.uku.reader`) |
 | Linux | `~/.config/uku` (or `$XDG_CONFIG_HOME/uku`) |
 
-- **Settings** hold your appearance, reading and language choices, your keyboard shortcuts, the window's size and
+- **Settings** hold your appearance, reading, accessibility (such as text spacing, the reading ruler and the read
+  aloud voice and speed) and language choices, your keyboard shortcuts, the window's size and
   position, the folders of your workspace and the documents you had open, your pinned files and folder colors, your
   list of recent files and folders (their paths on your computer), and your choices for updates, web pictures and AI
   agents. You can clear the recent list in the app (⋯ ▸ Recent ▸ *Clear list*).
@@ -138,7 +142,7 @@ own policies.
 ## Links
 
 Web and email links in a document open in your browser or email app when you click them; other files open in the app
-your system uses for them. What happens on those websites and in those apps is up to them.
+your system uses for them, or in the app you pick from a link's menu (*Open with*). What happens on those websites and in those apps is up to them.
 
 ## Children
 

@@ -4,7 +4,7 @@ permalink: /uku/terms/
 
 # Uku: Terms and Conditions
 
-**Last updated: November 4, 2026**
+**Last updated: November 11, 2026**
 
 These terms apply to your use of Uku, a Markdown reader for Windows, macOS and Linux made by Dinar Garipov ("I", "me"),
 in every edition I distribute. By installing or using Uku you agree to these terms. If you don't agree, don't install
@@ -62,9 +62,10 @@ copy of them and no way to recover them. You alone are responsible for:
   and may send what it reads to its provider. The agents, their providers and what they do are not under my control;
 - **updates** you choose to install in the editions that update themselves: Uku downloads them from GitHub, checks
   them and replaces its own files when it quits;
-- checking that Uku is suitable for your purpose, and that what it shows is what the file says. Don't rely on Uku's
-  rendering of a document for anything where a misread could cause harm (for example medical, legal, safety or
-  financial information).
+- checking that Uku is suitable for your purpose, and that what it shows is what the file says. That includes what Uku
+  reads aloud or tells a screen reader, such as formulas and diagrams put into words, which can be wrong or incomplete.
+  Don't rely on how Uku shows or reads a document for anything where a misread could cause harm (for example medical, legal,
+  safety or financial information).
 
 ## 4. Limitation of liability
 

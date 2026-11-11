@@ -17,6 +17,7 @@ To help me answer quickly, please mention:
 - your Uku version (⋯ ▸ **About Uku**; on a Mac, **Uku ▸ About Uku** in the menu bar);
 - where you got Uku (Microsoft Store, Mac App Store or a download);
 - your operating system and its version (for example Windows 11, macOS 15.4 or Ubuntu 24.04);
+- if you use a screen reader, voice control or another assistive technology or setting, which one;
 - what you did, what you expected and what happened instead;
 - a screenshot, if it helps to show the problem;
 - for a document that looks wrong: the smallest piece of Markdown that shows it, if you can share it.
@@ -41,6 +42,13 @@ you send them, and leave out anything you'd rather not share.
   typing and when you leave the document. You can turn it off in Settings ▸ General.
 - **The page jumped or didn't update.** Uku shows a file again when it changes on disk and keeps your place; if it
   didn't, press F5 to reload, and please tell me how it happened.
+- **The text is too small, too tight or hard to follow.** Ctrl+= makes it larger (up to 400 %). Settings ▸
+  Accessibility has *Easy reading*, more space between lines, letters and words, a reading ruler and high contrast;
+  Settings ▸ Reading has fonts such as Atkinson Hyperlegible and OpenDyslexic. The
+  [Accessibility](accessibility.md) page lists everything.
+- **Can Uku read a document aloud?** Yes, on Windows for now: Ctrl+Shift+U, or ⋯ ▸ **Read aloud**. It uses the voices
+  installed on your computer; Settings ▸ Accessibility ▸ Listening picks the voice and the speed. If a document's
+  language has no voice, add one in your system's speech settings.
 - **How do I connect an AI agent?** ⋯ ▸ **Connect an AI agent…** (Settings ▸ AI agents). The
   [Privacy Policy](privacy-policy.md#ai-agents) explains what a connected agent can see.
 
