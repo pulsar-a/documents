@@ -27,7 +27,7 @@ back to the same file. It doesn't copy or upload your documents anywhere. Diagra
 everything else on the page are drawn on your computer.
 
 **Read aloud** uses the voices installed on your computer, through your system's own speech (on Windows, Windows'
-speech voices). Uku never sends the text to an online speech service.
+speech voices; on a Mac, the Mac's own voices). Uku never sends the text to an online speech service.
 
 Searching your files reads them on your computer when you search. Uku doesn't build or keep a search index on disk.
 

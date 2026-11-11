@@ -46,7 +46,8 @@ you send them, and leave out anything you'd rather not share.
   Accessibility has *Easy reading*, more space between lines, letters and words, a reading ruler and high contrast;
   Settings ▸ Reading has fonts such as Atkinson Hyperlegible and OpenDyslexic. The
   [Accessibility](accessibility.md) page lists everything.
-- **Can Uku read a document aloud?** Yes, on Windows for now: Ctrl+Shift+U, or ⋯ ▸ **Read aloud**. It uses the voices
+- **Can Uku read a document aloud?** Yes, on Windows and macOS (not yet on Linux): Ctrl+Shift+U (⇧⌘U on a Mac), or ⋯ ▸
+  **Read aloud**; to hear just a passage, select it, right-click it and choose **Read aloud**. It uses the voices
   installed on your computer; Settings ▸ Accessibility ▸ Listening picks the voice and the speed. If a document's
   language has no voice, add one in your system's speech settings.
 - **How do I connect an AI agent?** ⋯ ▸ **Connect an AI agent…** (Settings ▸ AI agents). The

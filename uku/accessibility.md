@@ -35,8 +35,9 @@ otherwise. These are the default shortcuts: you can change any of them in Settin
 - **Readable colors.** Text has a contrast of at least 4.5:1 with its background, and the focus ring, borders and other
   parts at least 3:1, in every theme and with every accent color, including code and its syntax colors.
 - **Bigger text.** Ctrl+= and Ctrl+- make the document's text larger or smaller, from 70 % to 400 % (Ctrl+0 goes back
-  to 100 %); Ctrl and the mouse wheel, or pinching on a trackpad, do the same. Also in **Aa** ▸ *Text size* and
-  Settings ▸ Reading. The page reflows to fit the window: even in a narrow window at 400 %, nothing is cut off and only
+  to 100 %); Ctrl and the mouse wheel, or pinching on a trackpad, do the same (on a Mac, scrolling with two fingers
+  while holding ⌘ just scrolls). The new size shows for a moment at the top right of the window. Also in **Aa** ▸
+  *Text size* and Settings ▸ Reading. The page reflows to fit the window: even in a narrow window at 400 %, nothing is cut off and only
   wide tables and code scroll sideways. The rest of the window keeps its size.
 - **Fonts.** Settings ▸ Reading ▸ *Font*: Sans, Serif, Mono, Literata, Atkinson Hyperlegible, OpenDyslexic, Andika, or
   any font installed on your computer. Code has its own font, also in Settings ▸ Reading.
@@ -56,10 +57,12 @@ otherwise. These are the default shortcuts: you can change any of them in Settin
 - **Quiet focus mode.** Settings ▸ Accessibility ▸ Reading: in focus mode (F11), only the text is left: no heading
   marks, corner tools or reading progress, the properties folded and nothing moving. What it hides can still be reached
   with the keyboard. Off by default.
-- **Read aloud** (Windows for now): Ctrl+Shift+U, or ⋯ ▸ *Read aloud*, reads the page with your computer's own voices,
-  from where you are to the end. The sentence being read is tinted and the word being said is underlined, and the page
+- **Read aloud** (Windows and macOS): Ctrl+Shift+U, or ⋯ ▸ *Read aloud*, reads the page with your computer's own
+  voices, from where you are to the end. To hear just a passage, select it, right-click it and choose *Read aloud*. The
+  sentence being read is tinted and the word being said is underlined, and the page
   keeps up with it. A bar at the bottom has the previous and next sentence, pause, the speed (0.5× to 2×) and stop;
-  Alt+Shift+← / Alt+Shift+→ go a sentence back or on, Esc stops. Formulas are read in words, pictures by their
+  Alt+Shift+← / Alt+Shift+→ go a sentence back or on, Esc stops; the reading keys and Ctrl+J move the reading to where
+  they take you. Formulas are read in words, pictures by their
   description and diagrams by what they show. Settings ▸ Accessibility ▸ Listening sets the voice, the speed and
   whether code is read too. With *Automatic*, Uku picks a voice in the document's language (from `lang` in its front
   matter), and tells you if your computer has none. Uku uses only voices installed on your computer, never an online
@@ -89,6 +92,11 @@ never animates when a document changes on disk, and read aloud moves the page in
 Settings ▸ Accessibility ▸ Motion: *System* (the default) follows your system: Windows' *Animation effects*, macOS's
 *Reduce motion*, GNOME's animations. *Reduced* turns off every fade, slide and easing in Uku, its standard controls
 included; *Full* keeps them.
+
+The heading marks beside the page grow into a list of the headings when you point at them, magnified around the
+pointer. Settings ▸ Reading ▸ *Heading marks* ▸ *Pointing at the marks shows*: *All headings* shows the same list at
+once, every name the same size and nothing growing; *Only the heading's name* shows just the one you point at. You can
+also turn the marks off there.
 
 Animated pictures (GIF, WebP) play only while they are on screen. *Animated pictures* in the same group: *Play while
 motion is on* (the default), *Click to play* (each stays still until you press its play button) or *Never*. A picture's
@@ -122,9 +130,14 @@ Everything in Uku can be done without a mouse.
 | Read aloud: previous / next sentence | Alt+Shift+← / Alt+Shift+→ |
 | Reading ruler: a line down / up | Alt+Shift+↓ / Alt+Shift+↑ |
 | Text size larger / smaller / 100 % | Ctrl+= / Ctrl+- / Ctrl+0 |
+| The page's menu (copy as Markdown, find the selected words, edit here, read the selection aloud…) | Context-menu key or Shift+F10 |
 | Undo what a message offers to undo | Ctrl+Z (outside the editor) |
 | Settings | Ctrl+, |
 | Focus mode | F11 (Mac: also ⌃⌘F) |
+
+**F1** lists every shortcut, grouped as in Settings ▸ Keyboard. ↑ / ↓ go from one shortcut to the next, Home / End to
+the first and the last, Page Up / Page Down a screen at a time, and Tab from group to group; a screen reader reads each
+with its keys (*Open file, Ctrl+O*). Esc closes the list and puts the keyboard back where it was.
 
 **Ctrl+J** lists what the page holds, in reading order: headings, links, tables, pictures, diagrams, formulas, code,
 lists, quotes, alerts and tasks, each with what it says. Pick a kind, type to narrow the list, and Enter goes there.
@@ -142,7 +155,9 @@ expand) show when Tab reaches them, not only under the pointer. In the sidebar, 
 folders, F2 renames, Delete (Mac: ⌘⌫) deletes, and the context-menu key (or Shift+F10) opens an item's menu, with
 *Move to…* to move a file or folder, and *Move up* / *Move down* to reorder pinned items and a workspace's folders. To
 make the sidebar or a side wider or narrower, Tab to the line between them and press ← or →. A link's menu (open it
-with another app, copy its address and more) opens with the context-menu key too. Pictures can be reached with Tab and
+with another app, copy its address and more) opens with the context-menu key too, and so does the page's own menu
+(copy, copy as Markdown or as a quote for an AI agent, copy a link to the section, find or search for the selected
+words, edit here, read aloud). Pictures can be reached with Tab and
 opened larger with Enter (Esc closes them).
 
 **Easy to hit and to name.** Every button and box you can click is at least 24 × 24 pixels, even where it looks
@@ -203,7 +218,7 @@ These are known gaps. They're being worked on, and this page changes when each i
   isn't read line by line with its indentation, and you can't yet step through a formula or a diagram part by part.
 - **The screen reader's voice doesn't switch to a document's language** by itself; Uku says the language instead. (Read
   aloud does switch.)
-- **Read aloud works on Windows only** for now; on macOS and Linux, use your system's own speech for now.
+- **Read aloud doesn't work on Linux yet**; use your system's own speech there for now.
 - **Your system's text size** (such as Windows' *Text size*) isn't followed by Uku's own buttons and menus yet; the page
   can be made larger with Ctrl+=.
 - **Animated pictures that flash quickly** aren't detected yet. Set *Animated pictures* to *Click to play* or *Never*
@@ -212,7 +227,8 @@ These are known gaps. They're being worked on, and this page changes when each i
 ## How it is checked
 
 Before every release, Uku's automated tests check that every control has a name (in English and German) on every
-screen, the roles of the page's headings, lists, tables and other parts, moving by links and headings and with F6, what
+screen, the roles of the page's headings, lists, tables and other parts, moving by links and headings, with F6 and
+through the list of shortcuts, what
 is read out, contrast in every theme and accent color, colors for every kind of color vision, targets of at least 24
 pixels, names that contain their visible words, no animation when motion is reduced, and nothing cut off at large text
 sizes, wide spacing and in a narrow window.
