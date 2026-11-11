@@ -33,3 +33,14 @@
       url: /uku/accessibility/
     - title: Support
       url: /uku/support/
+- id: afterquit
+  name: AfterQuit
+  documents:
+    - title: Privacy
+      url: /afterquit/privacy/
+    - title: Terms
+      url: /afterquit/terms/
+    - title: Accessibility
+      url: /afterquit/accessibility/
+    - title: Support
+      url: /afterquit/support/
