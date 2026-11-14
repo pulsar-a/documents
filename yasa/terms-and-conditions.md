@@ -4,11 +4,11 @@ permalink: /yasa/terms/
 
 # Yasa: Terms and Conditions
 
-**Last updated: October 20, 2026**
+**Last updated: November 13, 2026**
 
-These terms apply to your use of Yasa, a todo app for macOS, Windows and Linux made by Dinar Garipov ("I", "me"), in
-every edition: the downloads from GitHub, the Mac App Store edition, and any other build I distribute. By installing or
-using Yasa you agree to these terms. If you don't agree, don't install or use Yasa.
+These terms apply to your use of Yasa, a to-do app for Windows, macOS and Linux made by Dinar Garipov ("I", "me"), in
+every edition I distribute. By installing or using Yasa you agree to these terms. If you don't agree, don't install or
+use Yasa.
 
 > **The short version:**
 >
@@ -16,18 +16,19 @@ using Yasa you agree to these terms. If you don't agree, don't install or use Ya
 > - **I am not liable for any loss or damage from using Yasa, including any loss of data**, to the fullest extent the
 >   law allows.
 > - **Your data is on your computer and is your responsibility.** Keep your own backups.
+> - **AI agents you connect to Yasa, and the services they use, are not mine.** What they do with your tasks is between
+>   you and them.
 
 ## 1. License to use Yasa
 
-I grant you a personal, non-exclusive, non-transferable, revocable license to install and use Yasa on devices you own
-or control. You may not sell, rent or sublicense the app builds I distribute, or remove copyright notices from them.
+I grant you a personal, non-exclusive, non-transferable, revocable license to install and use the official builds of
+Yasa that I publish (in the Microsoft Store, the Mac App Store, or on Yasa's website and its GitHub releases) on devices
+you own or control. You may not sell, rent or sublicense Yasa, copy it for others, or remove copyright notices from it.
+Yasa's source code is not part of this license.
 
-If Yasa's source code is published under an open-source license, that license governs the source code and your
-rights to it; these terms govern your use of the app.
-
-**Mac App Store edition.** If you got Yasa from the Mac App Store, Apple's Licensed Application End User License
-Agreement also applies. Where it conflicts with these terms about the App Store edition, Apple's agreement wins.
-Apple is not a party to these terms and has no obligation to maintain or support Yasa.
+If you get Yasa from an app store, that store's license terms also apply. Where they conflict with these terms about
+that edition, the store's terms win. The store is not a party to these terms and has no obligation to maintain or
+support Yasa.
 
 ## 2. Software provided "as is"
 
@@ -45,14 +46,19 @@ Yasa stores everything on your computer, in the files and folders you choose (se
 [Privacy Policy](privacy-policy.md)). I have no copy of your data and no way to recover it. You alone are responsible
 for:
 
-- **keeping backups** of your `.yasa` files and other data. Yasa's own local backups and its memory of deleted items
-  are a convenience, not a guarantee;
+- **keeping backups** of your `.yasa` files and other data. Yasa's own local backups, its *Recently deleted* items and
+  its archived ones are a convenience, not a guarantee;
 - **your passwords.** If you protect a document with a password and forget it, the document can't be opened by anyone,
   including me;
 - **sync services** you use (iCloud Drive, Dropbox, OneDrive, network drives and others). Conflicts, overwrites, lost
   or corrupted files caused by them, or by how Yasa works with them, are your risk;
-- **AI agents** you connect to Yasa. Whatever an AI tool reads, changes or deletes through Yasa's MCP server, and
-  whatever it sends to its provider, is between you, the tool and its provider;
+- **dates Yasa works out for you**: the next occurrence of a repeating task, a task hidden until its start date, the
+  dates typed into a task's title. Check that they are the ones you meant;
+- **AI agents** you connect to Yasa. When you add Yasa to an agent in Settings ▸ AI agents, Yasa changes that agent's
+  settings file to do so. A connected agent can read, change and delete the tasks of the documents you allow, and may
+  send what it reads to its provider. The agents, their providers and what they do are not under my control;
+- **updates** you choose to install in the editions that update themselves: Yasa downloads them from GitHub, checks
+  them and replaces its own files when it quits. The installers and packages also replace Yasa's files;
 - **links** you open from tasks, and the websites behind them;
 - what you put into Yasa, and checking that Yasa is suitable for your purpose. Don't rely on Yasa for anything where a
   missed task, a wrong date or a lost file could cause harm (for example medical, legal, safety or financial deadlines).
@@ -86,17 +92,23 @@ law allows.
 To the extent the law allows, you agree to hold me harmless from claims, losses and costs (including reasonable legal
 fees) arising from your use or misuse of Yasa, or your breach of these terms.
 
-## 6. Purchases (Mac App Store)
+## 6. Purchases (Microsoft Store, Mac App Store)
 
-Yasa Pro is an optional one-time in-app purchase sold and billed by Apple. Payments, refunds and purchase restoration
-are handled by Apple under its terms; I can't process refunds myself. Pro unlocks the features described in the app
-at the time of purchase; I may change, add or remove features in future versions. Features you already use are
-designed to keep working, but this is not a warranty (see section 2).
+Yasa Pro is an optional one-time purchase in the store editions: an in-app purchase sold and billed by Apple in the
+Mac App Store, an add-on sold and billed by Microsoft in the Microsoft Store. Payments, refunds and purchase
+restoration are handled by the store under its terms; I can't process refunds myself. Pro unlocks the features
+described in the app at the time of purchase; I may change, add or remove features in future versions. Features you
+already use are designed to keep working, but this is not a warranty (see section 2). The editions from Yasa's website
+have no purchases: everything in them is unlocked.
 
-## 7. Third-party components
+## 7. Third-party components and services
 
-Yasa includes third-party open-source components, each under its own license. Those licenses apply to those
-components, and their authors give no warranty either.
+Yasa includes third-party open-source components, each under its own license; they are listed with their licenses in
+the app, under **About Yasa ▸ Open-source licenses**. Those licenses apply to those components, and their authors give
+no warranty either.
+
+Third-party services you use with Yasa, such as app stores, GitHub, sync services, websites and AI agents and their
+providers, are governed by their own terms. I am not responsible for them.
 
 ## 8. Changes to these terms
 
@@ -115,8 +127,8 @@ Sections 2 to 5 and 10 continue to apply after that.
 - **Severability.** If any part of these terms is found invalid or unenforceable, that part is limited or replaced by
   a valid provision that comes as close as possible to its intent, and the rest of the terms stay in effect.
 - **No waiver.** If I don't enforce a part of these terms, that doesn't mean I give up the right to enforce it later.
-- **Entire agreement.** These terms, together with the [Privacy Policy](privacy-policy.md) and, for the Mac App Store
-  edition, Apple's license agreement, are the whole agreement between you and me about Yasa.
+- **Entire agreement.** These terms, together with the [Privacy Policy](privacy-policy.md) and, for an app store
+  edition, that store's license terms, are the whole agreement between you and me about Yasa.
 
 ## Contact
 
