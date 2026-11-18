@@ -44,3 +44,14 @@
       url: /afterquit/accessibility/
     - title: Support
       url: /afterquit/support/
+- id: hatli
+  name: Hatli
+  documents:
+    - title: Privacy
+      url: /hatli/privacy/
+    - title: Terms
+      url: /hatli/terms/
+    - title: Accessibility
+      url: /hatli/accessibility/
+    - title: Support
+      url: /hatli/support/
