@@ -67,7 +67,7 @@ Settings ▸ Storage shows how much space each part takes and opens the folder.
   choose for an account or a group is saved as Hatli's own small copy, without anything else the file held.
 - **Settings**: your appearance, accessibility, mail, privacy and AI agent choices, the senders whose pictures you
   allowed, and the window's layout. Your two custom themes are files of their own.
-- **Senders' pictures**, if you turn them on (see *Sender pictures*): the icons of the websites Hatli asked, as Hatli's
+- **Company logos**, if you turn them on (see *Company logos*): the icons of the websites Hatli asked, as Hatli's
   own small copies (`logos`), each kept for 30 days.
 - **Logs**, only when something goes wrong: warnings and errors with their technical details, which can include the
   names of Hatli's own files. Hatli doesn't write your mail's text, subjects, addresses or passwords into them. Logs
@@ -108,9 +108,9 @@ connection, without cookies or the page they are in, and never from your own com
 hosting them learn your IP address, the time and that the message was opened. What they do with that is up to them; I
 receive nothing.
 
-### Sender pictures
+### Company logos
 
-If you turn on *Sender pictures* in Settings ▸ Privacy (**off by default**), Hatli shows a company's logo beside its
+If you turn on *Company logos* in Settings ▸ Privacy (**off by default**), Hatli shows a company's logo beside its
 mail instead of its initials. For that it asks the company's own website (the end of the sender's address, such as
 `amazon.de`) for the icon it publishes for itself (`apple-touch-icon.png`, or else `favicon.ico`), only over an encrypted
 connection, without cookies, and never from your own computer or local network. It never asks about personal
@@ -181,7 +181,7 @@ no personal data from Hatli, I hold nothing about you to access, correct, export
 providers and on your computer, under your control, and you can view, change or delete it at any time. Your mail
 providers handle your mail under their own policies. If you check for updates, GitHub handles those requests under the
 [GitHub General Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
-If you load pictures from the web, or turn on sender pictures, the websites asked handle those requests under their own
+If you load pictures from the web, or turn on company logos, the websites asked handle those requests under their own
 policies. If you
 connect an AI agent, its provider handles what the agent sends under its own policy.
 
