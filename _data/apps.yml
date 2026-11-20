@@ -55,3 +55,14 @@
       url: /hatli/accessibility/
     - title: Support
       url: /hatli/support/
+- id: brinebook
+  name: Brinebook
+  documents:
+    - title: Privacy
+      url: /brinebook/privacy/
+    - title: Terms
+      url: /brinebook/terms/
+    - title: Accessibility
+      url: /brinebook/accessibility/
+    - title: Support
+      url: /brinebook/support/

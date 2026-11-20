@@ -9,3 +9,4 @@ Privacy policies, terms and other legal documents for my apps.
 | **Uku** | [Privacy Policy](uku/privacy-policy.md) · [Terms and Conditions](uku/terms-and-conditions.md) · [Accessibility](uku/accessibility.md) · [Support](uku/support.md) |
 | **AfterQuit** | [Privacy Policy](afterquit/privacy-policy.md) · [Terms and Conditions](afterquit/terms-and-conditions.md) · [Accessibility](afterquit/accessibility.md) · [Support](afterquit/support.md) |
 | **Hatli** | [Privacy Policy](hatli/privacy-policy.md) · [Terms and Conditions](hatli/terms-and-conditions.md) · [Accessibility](hatli/accessibility.md) · [Support](hatli/support.md) |
+| **Brinebook** | [Privacy Policy](brinebook/privacy-policy.md) · [Terms and Conditions](brinebook/terms-and-conditions.md) · [Accessibility](brinebook/accessibility.md) · [Support](brinebook/support.md) |
