@@ -4,7 +4,7 @@ permalink: /hatli/privacy/
 
 # Hatli: Privacy Policy
 
-**Last updated: November 19, 2026**
+**Last updated: November 24, 2026**
 
 Hatli is an email app for Windows, macOS and Linux made by Dinar Garipov ("I", "me"). This policy explains what
 happens to your information when you use Hatli.
@@ -18,7 +18,7 @@ happens to your information when you use Hatli.
 > - **Nothing about you or your mail is sent to me.** Hatli has no analytics, no ads, no crash reporting of its own and
 >   no tracking. I never see your mail, your contacts or your passwords, and I have no way to.
 > - **Pictures from the web in messages are blocked** until you choose to load them, so senders can't tell when you
->   open their mail.
+>   open their mail. Fonts from the web stay off unless you turn them on.
 > - **If you connect an AI agent to Hatli**, that agent can read your mail through Hatli, as far as you allow. What the
 >   agent does with it is between you and the agent's provider.
 
@@ -34,7 +34,8 @@ the connection is encrypted. It doesn't copy, upload or index your mail anywhere
 For a Google or Microsoft account, you can sign in with your provider instead of a password. Hatli opens your
 provider's own sign-in page in your web browser; you sign in there, never in Hatli. Your provider then gives Hatli a
 sign-in token for your mail, which Hatli keeps in your system's keychain and uses only to connect to that account's
-mail servers. Your address is taken from the sign-in only when your provider says it is verified.
+mail servers. Your address is taken from the sign-in: from Google, only when Google says it is verified; from
+Microsoft, as the name of the Microsoft account you signed in with.
 
 With a Google account, Hatli asks for access to your Gmail (the `https://mail.google.com/` scope, which IMAP and SMTP
 need) and your email address. It uses them only to show you your mail, keep it in step with Gmail, and send the mail
@@ -44,8 +45,15 @@ will adhere to the
 the Limited Use requirements. In particular, none of it reaches me, it is never sold, never used for advertising, and
 never read by people. It reaches another app only if you connect an AI agent to Hatli yourself (see *AI agents*).
 
+With a Microsoft account (Outlook.com, Hotmail, Live, Microsoft 365), Hatli asks for access to your mail over IMAP
+and SMTP (`IMAP.AccessAsUser.All`, `SMTP.Send`), to stay signed in, and for your email address, and uses them only in
+the same way. If you turn on *Sync contacts* or *Sync calendar* for it, Hatli also asks to read your contacts
+(`Contacts.Read`) or your calendars (`Calendars.Read`) through Microsoft Graph, and only reads them.
+
 You can end Hatli's access at any time by removing the account in Hatli, and also in your provider's account settings
-(for Google, [myaccount.google.com/permissions](https://myaccount.google.com/permissions)).
+(for Google, [myaccount.google.com/permissions](https://myaccount.google.com/permissions); for a personal
+Microsoft account, [account.live.com/consent/Manage](https://account.live.com/consent/Manage); for a work or school
+account, [myapplications.microsoft.com](https://myapplications.microsoft.com/)).
 
 ## What Hatli keeps on your computer
 
@@ -84,9 +92,31 @@ None of this leaves your computer. **Removing an account** removes its mail, its
 computer (the mail stays on your provider's servers). Uninstalling Hatli doesn't always remove its folders: to remove
 everything, also delete them.
 
-Contacts and calendars: Hatli doesn't read your address books or calendars from your providers yet. Contacts and
-events you write in Hatli are kept on your computer. When Hatli syncs them, it will be with your own providers only,
-and this policy will say so first.
+Contacts: if you turn on *Sync contacts* for an account (Add account asks; the account's settings change it), Hatli
+copies that account's address book from your own provider into Contacts: from its contacts server (CardDAV) for
+iCloud, Fastmail, Yahoo or your own domain, from Google's contacts (the People API) for Gmail, or from Microsoft
+Graph for Outlook (read only), for which Google or Microsoft asks you first to let Hatli see your contacts. Hatli only reads them, unless you also turn on *Edit contacts* for the
+account (it is off until you do): then a change you make in Hatli to one of its contacts is sent to that same provider,
+and only that change (Google asks you first to let Hatli change your contacts). Hatli never deletes a contact at your
+provider, and never writes over a change made there meanwhile. A change waiting to be sent is kept with the copy.
+**The copy is encrypted** (ChaCha20-Poly1305) with its own random key in your system's keychain, whatever you chose for the mail;
+where there is no keychain (Linux, for now) it is kept only in memory while Hatli runs. Turning the switch off, or
+removing the account, removes the copy and its key from your computer.
+
+Calendars: if you turn on *Sync calendar* for an account (Add account asks; the account's settings change it), Hatli
+copies that account's calendars from your own provider: from its calendar server (CalDAV) for iCloud, Fastmail, Yahoo
+or your own domain, signing in as it does for the mail, from Google Calendar (the Calendar API) for Gmail, for which
+Google asks you first to let Hatli see your calendars (the `calendar.readonly` scope, used under the same Limited Use
+terms as your mail), or from Microsoft Graph for Outlook (read only), for which Microsoft asks you first. Hatli only reads them, unless you also turn on *Edit calendar* for the account (it is off until you
+do): then an event you add, change or delete in Hatli in one of its calendars is sent to that same provider, and only
+that change (Google asks you first to let Hatli change your calendar events, the `calendar.events` scope). Hatli never
+writes over a change made there meanwhile, and never lets your provider send its guests anything. A change waiting to
+be sent is kept with the copy. Without *Edit calendar*, events you add in Hatli to a synced calendar, and your answers
+to invitations, are kept with the copy on your computer and aren't sent to the server (an answer goes to the organizer
+as a message, as described above). **The copy is encrypted** the same way, with its own random key; where
+there is no keychain it is kept only in memory. Turning the switch off, or removing the account, removes the copy, the
+events you added to it and its key from your computer. Events you write in a calendar that isn't synced are kept on
+your computer only.
 
 ## When Hatli connects to the internet
 
@@ -108,15 +138,26 @@ connection, without cookies or the page they are in, and never from your own com
 hosting them learn your IP address, the time and that the message was opened. What they do with that is up to them; I
 receive nothing.
 
+### Fonts from the web
+
+Some messages are designed with fonts that live on a website: the sender's, or a font service's (such as Google Fonts).
+Fetching one tells that website your IP address, the time and that the message was opened, as a picture does. By
+default (Settings ▸ Privacy ▸ *Fonts from the web*: off), **Hatli doesn't fetch them**, and messages show in fonts on
+your computer. If you turn it on, Hatli fetches a message's fonts itself, the same way it fetches pictures, and only
+for a message whose pictures from the web you loaded. I receive nothing.
+
 ### Company logos
 
 If you turn on *Company logos* in Settings ▸ Privacy (**off by default**), Hatli shows a company's logo beside its
-mail instead of its initials. For that it asks the company's own website (the end of the sender's address, such as
-`amazon.de`) for the icon it publishes for itself (`apple-touch-icon.png`, or else `favicon.ico`), only over an encrypted
-connection, without cookies, and never from your own computer or local network. It never asks about personal
-addresses at mail services (such as Gmail or Outlook). The website learns your IP address and the time, but not which
-message you got, or that you opened it. Hatli keeps each icon on your computer for 30 days, and asks a website that has
-none again only after 7 days. I receive nothing.
+mail instead of its initials. For that it first looks up the logo the company publishes for its mail (BIMI) in the
+DNS, through the DNS servers your computer uses, and if there is one, fetches it from where the company's record says
+it is. Otherwise it asks the company's own website (the end of the sender's address, such as `amazon.de`) for the icon
+it publishes for itself: `apple-touch-icon.png`, else the icon its home page names (which can be on a server the
+website keeps its files on), or else `favicon.ico`. It asks only over an encrypted connection, without cookies, and
+never from your own computer or local network. It never asks about personal addresses at mail services (such as Gmail
+or Outlook). The website (and the server it keeps its icon or logo on) learns your IP address and the time, but not
+which message you got, or that you opened it. Hatli keeps each icon on your computer for 30 days, and asks a website
+that has none again only after 7 days. I receive nothing.
 
 ### Update checks
 
@@ -181,8 +222,8 @@ no personal data from Hatli, I hold nothing about you to access, correct, export
 providers and on your computer, under your control, and you can view, change or delete it at any time. Your mail
 providers handle your mail under their own policies. If you check for updates, GitHub handles those requests under the
 [GitHub General Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
-If you load pictures from the web, or turn on company logos, the websites asked handle those requests under their own
-policies. If you
+If you load pictures from the web, turn on fonts from the web, or turn on company logos, the websites asked handle
+those requests under their own policies. If you
 connect an AI agent, its provider handles what the agent sends under its own policy.
 
 If you write to me (for example for support), I receive your email address and what you write, use them only to
