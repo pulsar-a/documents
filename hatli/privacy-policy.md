@@ -4,7 +4,7 @@ permalink: /hatli/privacy/
 
 # Hatli: Privacy Policy
 
-**Last updated: November 24, 2026**
+**Last updated: November 25, 2026**
 
 Hatli is an email app for Windows, macOS and Linux made by Dinar Garipov ("I", "me"). This policy explains what
 happens to your information when you use Hatli.
@@ -82,6 +82,12 @@ Settings ▸ Storage shows how much space each part takes and opens the folder.
 - **Logs**, only when something goes wrong: warnings and errors with their technical details, which can include the
   names of Hatli's own files. Hatli doesn't write your mail's text, subjects, addresses or passwords into them. Logs
   are deleted after 14 days.
+- **Notifications.** When new mail comes to an inbox while Hatli is open, Hatli asks your system to show a
+  notification with the sender and the subject (Settings ▸ Mail ▸ Notifications can make it say only that new mail
+  came, or turn notifications off; a muted group stays quiet). Your system keeps its notifications in its own
+  notification center and may show them on the lock screen. On Windows, outside the Microsoft Store edition, the
+  name they are shown under is written in your user's registry (`Software\Classes\AppUserModelId\Hatli.Mail`).
+  Nothing about them is sent over the internet.
 - **The web engine's folder** (`engine`), used by the system's web engine that shows HTML mail. It runs in private
   mode and keeps no mail there.
 
