@@ -48,7 +48,9 @@ never read by people. It reaches another app only if you connect an AI agent to 
 With a Microsoft account (Outlook.com, Hotmail, Live, Microsoft 365), Hatli asks for access to your mail over IMAP
 and SMTP (`IMAP.AccessAsUser.All`, `SMTP.Send`), to stay signed in, and for your email address, and uses them only in
 the same way. If you turn on *Sync contacts* or *Sync calendar* for it, Hatli also asks to read your contacts
-(`Contacts.Read`) or your calendars (`Calendars.Read`) through Microsoft Graph, and only reads them.
+(`Contacts.Read`) or your calendars (`Calendars.Read`) through Microsoft Graph, and only reads them, unless you also
+turn on *Edit calendar*: then it asks to change your calendars too (`Calendars.ReadWrite`), and uses that only to send
+the events you add, change or delete in Hatli.
 
 You can end Hatli's access at any time by removing the account in Hatli, and also in your provider's account settings
 (for Google, [myaccount.google.com/permissions](https://myaccount.google.com/permissions); for a personal
@@ -107,10 +109,12 @@ Calendars: if you turn on *Sync calendar* for an account (Add account asks; the 
 copies that account's calendars from your own provider: from its calendar server (CalDAV) for iCloud, Fastmail, Yahoo
 or your own domain, signing in as it does for the mail, from Google Calendar (the Calendar API) for Gmail, for which
 Google asks you first to let Hatli see your calendars (the `calendar.readonly` scope, used under the same Limited Use
-terms as your mail), or from Microsoft Graph for Outlook (read only), for which Microsoft asks you first. Hatli only reads them, unless you also turn on *Edit calendar* for the account (it is off until you
+terms as your mail), or from Microsoft Graph for Outlook, for which Microsoft asks you first. Hatli only reads them, unless you also turn on *Edit calendar* for the account (it is off until you
 do): then an event you add, change or delete in Hatli in one of its calendars is sent to that same provider, and only
-that change (Google asks you first to let Hatli change your calendar events, the `calendar.events` scope). Hatli never
-writes over a change made there meanwhile, and never lets your provider send its guests anything. A change waiting to
+that change (Google asks you first to let Hatli change your calendar events, the `calendar.events` scope; Microsoft,
+the `Calendars.ReadWrite` scope). Hatli never writes over a change made there meanwhile (at Outlook, it looks for one
+just before it writes), and never lets your provider send its guests anything, except Outlook, which itself emails an
+event's guests its invitation, changes and cancellation when you add, change or delete an event that has guests. A change waiting to
 be sent is kept with the copy. Without *Edit calendar*, events you add in Hatli to a synced calendar, and your answers
 to invitations, are kept with the copy on your computer and aren't sent to the server (an answer goes to the organizer
 as a message, as described above). **The copy is encrypted** the same way, with its own random key; where
