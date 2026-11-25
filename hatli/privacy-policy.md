@@ -111,9 +111,10 @@ Contacts: if you turn on *Sync contacts* for an account (Add account asks; the a
 copies that account's address book from your own provider into Contacts: from its contacts server (CardDAV) for
 iCloud, Fastmail, Yahoo or your own domain, from Google's contacts (the People API) for Gmail, or from Microsoft
 Graph for Outlook (read only), for which Google or Microsoft asks you first to let Hatli see your contacts. Hatli only reads them, unless you also turn on *Edit contacts* for the
-account (it is off until you do): then a change you make in Hatli to one of its contacts is sent to that same provider,
-and only that change (Google asks you first to let Hatli change your contacts). Hatli never deletes a contact at your
-provider, and never writes over a change made there meanwhile. A change waiting to be sent is kept with the copy.
+account (it is off until you do): then a contact you add, change or delete in Hatli in that account's address book is
+sent to that same provider, and only that (Google asks you first to let Hatli change your contacts). Hatli deletes a
+contact at your provider only when you delete it in Hatli, a few seconds later (so you can undo it), and never writes
+over, or deletes, a contact changed there meanwhile. A change waiting to be sent is kept with the copy.
 **The copy is encrypted** (ChaCha20-Poly1305) with its own random key in your system's keychain, whatever you chose for the mail;
 where there is no keychain (Linux, for now) it is kept only in memory while Hatli runs. Turning the switch off, or
 removing the account, removes the copy and its key from your computer.
