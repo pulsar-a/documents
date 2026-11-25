@@ -69,9 +69,12 @@ account, [myapplications.microsoft.com](https://myapplications.microsoft.com/)).
 Settings ▸ Storage shows how much space each part takes and opens the folder.
 
 - **Your mail.** A copy of each account's mail is kept on your computer, so Hatli opens fast, searches quickly and
-  works offline. Settings ▸ Storage chooses how much mail, and whether attachments, are kept. **Each account's mail is
-  encrypted** (ChaCha20-Poly1305), with its own random key kept in your system's keychain. You can turn encryption
-  off for an account in its settings; Hatli says plainly what that means.
+  works offline. Settings ▸ Storage chooses how much mail, and whether attachments, are kept, and removes the
+  attachments and the pictures inside messages kept there (they download again from your mail server when you open
+  them). **Each account's mail is encrypted** (ChaCha20-Poly1305), with its own random key kept in your system's
+  keychain, **and so are the attachments kept with it** (AES-GCM, with a key made from the mail's). Hatli stops keeping
+  attachments while less than 2 GB is free on the disk. You can turn encryption off for an account in its settings;
+  Hatli says plainly what that means.
 - **Drafts**, including the drafts AI agents write for you (on Windows, the mail and drafts are in
   `%USERPROFILE%\.hatli`, where Hatli and its agent server both reach them). **Each draft is encrypted**
   (AES-GCM), with a random key kept in your system's keychain.
