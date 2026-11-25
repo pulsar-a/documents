@@ -54,8 +54,9 @@ you'd rather not share.
   high-contrast themes, fonts such as Atkinson Hyperlegible and OpenDyslexic, and a separate size for your mail's
   text. The [Accessibility](accessibility.md) page lists everything.
 - **How do I connect an AI agent?** ⋯ ▸ **Connect an AI agent…** (Settings ▸ AI agents) shows what to paste into your
-  agent's settings. An agent can read your mail and write drafts, as far as you allow there, but it can never send:
-  you review and send every draft yourself. The [Privacy Policy](privacy-policy.md#ai-agents) explains what a
+  agent's settings. An agent can read your mail and calendar, write drafts, and add or change events, as far as you
+  allow there, but it can never send: you review and send every draft yourself, and the events it adds or changes
+  never have guests, so no one is emailed. The [Privacy Policy](privacy-policy.md#ai-agents) explains what a
   connected agent can see.
 - **Where are my settings? How do I start fresh?** Settings ▸ Storage ▸ **Open folder**. Uninstalling Hatli doesn't
   always remove its folders; to start fresh, quit Hatli and delete them (the

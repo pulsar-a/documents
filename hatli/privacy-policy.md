@@ -194,18 +194,23 @@ happens until **you add Hatli to an agent** yourself: Settings ▸ AI agents sho
 settings. Hatli doesn't change any agent's settings itself.
 
 **What the agent can do.** Once connected, the agent starts Hatli's MCP server on your computer and talks to it
-directly, not over the internet. The server reads the mail kept on your computer (never changing it) and lets the agent
-list your accounts and folders, search your mail, read messages and conversations, and write drafts. Settings ▸ AI
-agents lets you choose what it may see and do: which of your accounts (an account you add later stays hidden from
-agents until you turn it on there), whether it may find and open messages at all, their text (when off, an agent sees
-only the sender, date and subject), whom they went to, the names of their attachments, how far back (all your mail, or
-only the last year, 90 or 30 days), whether it sees Sent, Spam and Trash (Spam and Trash are hidden unless you show
-them), the drafts waiting in Hatli, and whether it may write drafts; or nothing at all (*Let AI agents use Hatli*).
-What you leave out isn't there for the agent. Your choices apply at once.
+directly, not over the internet. The server reads the mail and calendars kept on your computer (never changing them)
+and lets the agent list your accounts and folders, search your mail, read messages and conversations, write drafts,
+find events in your calendars and see what is in them, and, if you allow it, ask Hatli to add or change events.
+Settings ▸ AI agents lets you choose what it may see and do: which of your accounts (an account you add later stays
+hidden from agents until you turn it on there), whether it may find and open messages at all, their text (when off, an
+agent sees only the sender, date and subject), whom they went to, the names of their attachments, how far back (all
+your mail, or only the last year, 90 or 30 days), whether it sees Sent, Spam and Trash (Spam and Trash are hidden unless
+you show them), the drafts waiting in Hatli, whether it may write drafts, whether it may see your calendar, and whether
+it may add or change events (both off unless you turn them on); or nothing at all (*Let AI agents use Hatli*). What you
+leave out isn't there for the agent. Your choices apply at once.
 
-**What an agent can't do.** It can't send, delete or move mail, or reach the internet through Hatli. A draft it writes
-waits in your Drafts, marked as written by an agent, until you review and send it yourself, and it never carries an
-attachment.
+**What an agent can't do.** It can't send, delete or move mail, delete events, or reach the internet through Hatli. A
+draft it writes waits in your Drafts, marked as written by an agent, until you review and send it yourself, and it never
+carries an attachment. An event it adds never has guests, and it can change only your own events without guests that
+don't repeat, so nothing it does emails anyone. Hatli makes the change while it is open, as if you had made it (so it
+reaches your calendar's server only if you let Hatli change that account's calendar), names the agent, and lets you
+undo it.
 
 **Where your mail goes from there.** Whatever an agent reads through Hatli becomes part of its conversation. Most
 agents send their conversations to their provider's servers (for example Anthropic or OpenAI) to work, under that
