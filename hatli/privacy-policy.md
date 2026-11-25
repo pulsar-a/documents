@@ -90,6 +90,10 @@ Settings ▸ Storage shows how much space each part takes and opens the folder.
   notification center and may show them on the lock screen. On Windows, outside the Microsoft Store edition, the
   name they are shown under is written in your user's registry (`Software\Classes\AppUserModelId\Hatli.Mail`).
   Nothing about them is sent over the internet.
+- **Your default email app**, only if you choose it: Settings ▸ General ▸ *Make Default* asks your system to open email
+  links in Hatli (on Windows, in Windows' own settings; on macOS, your Mac asks you first). On Windows, a copy of Hatli
+  that wasn't installed first lists itself among your email apps, in your user's registry (`Software\Hatli`,
+  `Software\Classes\Hatli.Url.mailto`).
 - **The web engine's folder** (`engine`), used by the system's web engine that shows HTML mail. It runs in private
   mode and keeps no mail there.
 
