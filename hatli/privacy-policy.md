@@ -196,8 +196,12 @@ settings. Hatli doesn't change any agent's settings itself.
 **What the agent can do.** Once connected, the agent starts Hatli's MCP server on your computer and talks to it
 directly, not over the internet. The server reads the mail kept on your computer (never changing it) and lets the agent
 list your accounts and folders, search your mail, read messages and conversations, and write drafts. Settings ▸ AI
-agents lets you choose what it may do: *Allow reading message text* (when off, an agent sees only the sender, date and
-subject), *Allow writing drafts*, or nothing at all (*Let AI agents use Hatli*). Your choices apply at once.
+agents lets you choose what it may see and do: which of your accounts (an account you add later stays hidden from
+agents until you turn it on there), whether it may find and open messages at all, their text (when off, an agent sees
+only the sender, date and subject), whom they went to, the names of their attachments, how far back (all your mail, or
+only the last year, 90 or 30 days), whether it sees Sent, Spam and Trash (Spam and Trash are hidden unless you show
+them), the drafts waiting in Hatli, and whether it may write drafts; or nothing at all (*Let AI agents use Hatli*).
+What you leave out isn't there for the agent. Your choices apply at once.
 
 **What an agent can't do.** It can't send, delete or move mail, or reach the internet through Hatli. A draft it writes
 waits in your Drafts, marked as written by an agent, until you review and send it yourself, and it never carries an
