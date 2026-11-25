@@ -76,7 +76,8 @@ Settings ▸ Storage shows how much space each part takes and opens the folder.
   `%USERPROFILE%\.hatli`, where Hatli and its agent server both reach them). **Each draft is encrypted**
   (AES-GCM), with a random key kept in your system's keychain.
 - **Your accounts and account groups**: their names, addresses, servers, colors, icons and signatures. A picture you
-  choose for an account or a group is saved as Hatli's own small copy, without anything else the file held.
+  choose for an account or a group, or for a signature (a company's logo, `signatures`), is saved as Hatli's own small
+  copy, without anything else the file held. A signature's pictures go inside the messages it is under.
 - **Settings**: your appearance, accessibility, mail, privacy and AI agent choices, the senders whose pictures you
   allowed, and the window's layout. Your two custom themes are files of their own.
 - **Company logos**, if you turn them on (see *Company logos*): the icons of the websites Hatli asked, as Hatli's
