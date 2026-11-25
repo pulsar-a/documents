@@ -125,7 +125,7 @@ or your own domain, signing in as it does for the mail, from Google Calendar (th
 Google asks you first to let Hatli see your calendars (the `calendar.readonly` scope, used under the same Limited Use
 terms as your mail), or from Microsoft Graph for Outlook, for which Microsoft asks you first. Hatli only reads them, unless you also turn on *Edit calendar* for the account (it is off until you
 do): then an event you add, change or delete in Hatli in one of its calendars is sent to that same provider, and only
-that change (Google asks you first to let Hatli change your calendar events, the `calendar.events` scope; Microsoft,
+that change (when you open a guest's answer to an invitation you sent, that guest's answer in the event counts as one) (Google asks you first to let Hatli change your calendar events, the `calendar.events` scope; Microsoft,
 the `Calendars.ReadWrite` scope). Hatli never writes over a change made there meanwhile (at Outlook, it looks for one
 just before it writes), and never lets your provider send its guests anything, except Outlook, which itself emails an
 event's guests its invitation, changes and cancellation when you add, change or delete an event that has guests. A change waiting to
