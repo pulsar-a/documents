@@ -41,7 +41,8 @@ you'd rather not share.
   their mail, so Hatli blocks them until you choose. Press **Load pictures** above the message, or choose to always
   load them from that sender; Settings ▸ Privacy changes what happens by default.
 - **I deleted or archived a message by mistake.** Press **Undo** in the message that appears. Afterwards, look in the
-  account's Trash or Archive folder.
+  account's Trash or Archive folder. **Delete Forever** in Trash or Spam (Hatli asks first) deletes it on your mail
+  server too, and can't be undone.
 - **I sent a message too soon.** Press **Undo** while the countdown runs. Settings ▸ Mail ▸ **Undo send** sets how
   long you have.
 - **Where is my mail kept? Can I read it offline?** A copy of your mail is kept on your computer, encrypted, so you
