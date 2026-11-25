@@ -72,7 +72,8 @@ Settings ▸ Storage shows how much space each part takes and opens the folder.
   encrypted** (ChaCha20-Poly1305), with its own random key kept in your system's keychain. You can turn encryption
   off for an account in its settings; Hatli says plainly what that means.
 - **Drafts**, including the drafts AI agents write for you (on Windows, the mail and drafts are in
-  `%USERPROFILE%\.hatli`, where Hatli and its agent server both reach them).
+  `%USERPROFILE%\.hatli`, where Hatli and its agent server both reach them). **Each draft is encrypted**
+  (AES-GCM), with a random key kept in your system's keychain.
 - **Your accounts and account groups**: their names, addresses, servers, colors, icons and signatures. A picture you
   choose for an account or a group is saved as Hatli's own small copy, without anything else the file held.
 - **Settings**: your appearance, accessibility, mail, privacy and AI agent choices, the senders whose pictures you
@@ -93,8 +94,8 @@ Settings ▸ Storage shows how much space each part takes and opens the folder.
 
 **Passwords and sign-in tokens are never in these files.** They are kept in your system's own keychain: Windows
 Credential Manager, or the macOS Keychain (on this Mac only, never synced to iCloud). On Linux, until Hatli supports
-the Secret Service, your password is kept only in memory while Hatli runs, and an encrypted account's mail isn't kept
-on disk at all.
+the Secret Service, your password is kept only in memory while Hatli runs, and an encrypted account's mail and your
+drafts aren't kept on disk at all.
 
 None of this leaves your computer. **Removing an account** removes its mail, its key and its password from your
 computer (the mail stays on your provider's servers). Uninstalling Hatli doesn't always remove its folders: to remove
