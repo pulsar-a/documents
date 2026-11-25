@@ -83,8 +83,8 @@ Settings ▸ Storage shows how much space each part takes and opens the folder.
   names of Hatli's own files. Hatli doesn't write your mail's text, subjects, addresses or passwords into them. Logs
   are deleted after 14 days.
 - **Notifications.** When new mail comes to an inbox while Hatli is open, Hatli asks your system to show a
-  notification with the sender and the subject (Settings ▸ Mail ▸ Notifications can make it say only that new mail
-  came, or turn notifications off; a muted group stays quiet). Your system keeps its notifications in its own
+  notification with the sender and the subject (Settings ▸ Notifications can make it say only that new mail came,
+  turn notifications off, or mute them every day between two times; a muted group stays quiet). Your system keeps its notifications in its own
   notification center and may show them on the lock screen. On Windows, outside the Microsoft Store edition, the
   name they are shown under is written in your user's registry (`Software\Classes\AppUserModelId\Hatli.Mail`).
   Nothing about them is sent over the internet.
