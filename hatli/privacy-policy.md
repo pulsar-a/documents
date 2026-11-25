@@ -25,8 +25,9 @@ happens to your information when you use Hatli.
 ## Your mail and your mail providers
 
 When you add an account, Hatli connects to that account's mail servers: IMAP to read your mail, SMTP to send it. Your
-mail, your folders and the messages you send go between your computer and your provider, encrypted (TLS), under your
-provider's own privacy policy. Hatli never falls back to an unencrypted connection, and sends your password only once
+mail, your folders, the messages you send and the drafts you write (kept in your account's Drafts folder, so they are
+there on your other devices; not the drafts AI agents write) go between your computer and your provider, encrypted
+(TLS), under your provider's own privacy policy. Hatli never falls back to an unencrypted connection, and sends your password only once
 the connection is encrypted. It doesn't copy, upload or index your mail anywhere else.
 
 ### Signing in with Google or Microsoft
