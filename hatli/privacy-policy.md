@@ -174,7 +174,7 @@ that has none again only after 7 days. I receive nothing.
 ### Update checks
 
 The editions downloaded from Hatli's website can check for updates: when you click *Check for updates…*, or, if you
-turn it on in Settings ▸ General (**off by default**), each time Hatli starts. Hatli asks GitHub, where its releases
+turn it on in Settings ▸ General (**off by default**), when Hatli starts, at most once a day. Hatli asks GitHub, where its releases
 are published (`api.github.com`), for the latest release. Like any connection to a website, this reveals your IP
 address to GitHub, and the request names Hatli and its version. It contains nothing about you or your mail, and I
 receive nothing from it.
