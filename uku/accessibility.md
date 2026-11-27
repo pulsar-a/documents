@@ -14,8 +14,8 @@ Uku aims to meet the [Web Content Accessibility Guidelines (WCAG) 2.2](https://w
 where they apply to a desktop app. Much of it is checked by Uku's automated tests before every release (see
 [How it is checked](#how-it-is-checked)).
 
-Most of these settings are in **Settings ▸ Accessibility** (Ctrl+,), grouped by need: *Seeing*, *Reading*,
-*Listening*, *Motion* and *Keyboard*. The welcome page links there too, and the search box at the top of Settings finds
+Most of these settings are in **Settings ▸ Accessibility** (Ctrl+,), grouped by need: *Vision*, *Reading*,
+*Read aloud*, *Motion* and *Keyboard*. The welcome page links there too, and the search box at the top of Settings finds
 any setting by its words.
 
 Shortcuts are written for Windows and Linux; on a Mac, use ⌘ for Ctrl and ⌥ for Alt, except where the table says
@@ -24,10 +24,10 @@ otherwise. These are the default shortcuts: you can change any of them in Settin
 ## See it the way you need
 
 - **Light, dark, or as your system is.** The **Aa** button in the toolbar, or Settings ▸ Appearance: choose *Light*,
-  *Dark* or *Follow system* (the default), which is light while your system is light and dark while it is dark.
+  *Dark* or *System* (the default), which is light while your system is light and dark while it is dark.
 - **Themes.** Each side has its own themes, and you choose one for each: *Light*, *Sepia* (warm paper for long
   reading), *Sage* or *High contrast light*; and *Dusk*, *Dark*, *Espresso*, *Night* (near black) or *High contrast*.
-  With *Follow system*, Uku shows your light theme by day and your dark one at night, as your system changes. You can
+  With *System*, Uku shows your light theme by day and your dark one at night, as your system changes. You can
   also pick an accent color.
 - **Themes of your own.** The last theme of each side, *Custom light* and *Custom dark*, is yours to make. *Edit* on
   its picture in Settings ▸ Appearance opens its colors: the page, the text, the accent, the colors of code and more.
@@ -35,7 +35,7 @@ otherwise. These are the default shortcuts: you can change any of them in Settin
   colors you care about and Uku works out the rest. It tells you when two colors are too close to read.
 - **High contrast, dark or light.** *High contrast* is black with white text, a yellow accent and a cyan focus ring;
   *High contrast light* is white with black text, dark blue links and a purple focus ring, at 7:1 or more. In both,
-  alerts and messages are outlined instead of tinted. Settings ▸ Accessibility ▸ Seeing has a *High contrast* switch.
+  alerts and messages are outlined instead of tinted. Settings ▸ Accessibility ▸ Vision has a *High contrast* switch.
 - **Your system's contrast settings.** On *System*, Uku switches to high contrast by itself when your system's is on:
   the light one for a light contrast theme (such as Windows' *Desert*), the dark one otherwise. On Windows it also takes
   the colors of your contrast theme, wherever they keep enough contrast. On a Mac, *Increase contrast* does the same.
@@ -74,7 +74,7 @@ otherwise. These are the default shortcuts: you can change any of them in Settin
   keeps up with it. A bar at the bottom has the previous and next sentence, pause, the speed (0.5× to 2×) and stop;
   Alt+Shift+← / Alt+Shift+→ go a sentence back or on, Esc stops; the reading keys and Ctrl+J move the reading to where
   they take you. Formulas are read in words, pictures by their
-  description and diagrams by what they show. Settings ▸ Accessibility ▸ Listening sets the voice, the speed and
+  description and diagrams by what they show. Settings ▸ Accessibility ▸ Read aloud sets the voice, the speed and
   whether code is read too. With *Automatic*, Uku picks a voice in the document's language (from `lang` in its front
   matter), and tells you if your computer has none. Uku uses only voices installed on your computer, never an online
   service.
@@ -86,7 +86,7 @@ Nothing in Uku is told only by color:
 - Alerts (*Note*, *Tip*, *Important*, *Warning*, *Caution*) have an icon and their name, not only a tint.
 - Links are underlined as well as colored, and show what a click does: a link to a place on the same page has a dotted
   underline, a link that leaves Uku (a website, an email address, a file another app opens) has a small ↗, and a link
-  to a file that doesn't exist has a dashed underline and, when clicked, says *Can't find …*.
+  to a file that doesn't exist has a dashed underline and, when clicked, says *Not found: …*.
 - Done tasks are struck through as well as muted, and their box is ticked.
 - Find in the document marks the current match with an outline as well as a stronger color, and says *3 of 12*.
 - Added and removed lines in code keep their `+` and `−`.
@@ -105,13 +105,13 @@ Settings ▸ Accessibility ▸ Motion: *System* (the default) follows your syste
 included; *Full* keeps them.
 
 The heading marks beside the page grow into a list of the headings when you point at them, magnified around the
-pointer. Settings ▸ Reading ▸ *Heading marks* ▸ *Pointing at the marks shows*: *All headings* shows the same list at
+pointer. Settings ▸ Reading ▸ *Heading marks* ▸ *On hover*: *All headings* shows the same list at
 once, every name the same size and nothing growing; *Only the heading's name* shows just the one you point at. You can
 also turn the marks off there.
 
-Animated pictures (GIF, WebP) play only while they are on screen. *Animated pictures* in the same group: *Play while
-motion is on* (the default), *Click to play* (each stays still until you press its play button) or *Never*. A picture's
-own play button always plays it.
+Animated pictures (GIF, WebP) play only while they are on screen. *Animated pictures* in the same group: *Auto* (the default:
+while motion is on), *Click to play* (each stays still until you press its play button) or *Never*. A picture's own
+play button always plays it.
 
 ## Keyboard
 

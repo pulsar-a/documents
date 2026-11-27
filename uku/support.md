@@ -48,7 +48,7 @@ you send them, and leave out anything you'd rather not share.
   [Accessibility](accessibility.md) page lists everything.
 - **Can Uku read a document aloud?** Yes, on Windows and macOS (not yet on Linux): Ctrl+Shift+U (⇧⌘U on a Mac), or ⋯ ▸
   **Read aloud**; to hear just a passage, select it, right-click it and choose **Read aloud**. It uses the voices
-  installed on your computer; Settings ▸ Accessibility ▸ Listening picks the voice and the speed. If a document's
+  installed on your computer; Settings ▸ Accessibility ▸ Read aloud picks the voice and the speed. If a document's
   language has no voice, add one in your system's speech settings.
 - **How do I connect an AI agent?** ⋯ ▸ **Connect an AI agent…** (Settings ▸ AI agents). The
   [Privacy Policy](privacy-policy.md#ai-agents) explains what a connected agent can see.
