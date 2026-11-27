@@ -4,7 +4,7 @@ permalink: /uku/accessibility/
 
 # Uku: Accessibility
 
-**Last updated: November 11, 2026**
+**Last updated: November 27, 2026**
 
 Uku should work for everyone: whether you read with a mouse, only the keyboard, a switch, your voice or a screen reader;
 whether you need more contrast, larger text, more space between the lines, less motion or the text read aloud. This page
@@ -26,6 +26,9 @@ otherwise. These are the default shortcuts: you can change any of them in Settin
 - **Themes.** The **Aa** button in the toolbar, or Settings ▸ Appearance: *System* (the default) follows your system's
   light or dark setting, or choose *Light*, *Sepia* (warm paper for long reading), *Sage*, *Dusk*, *Dark*, *Espresso*,
   *Night* (near black), *High contrast* or *High contrast light*. You can also pick an accent color.
+- **Themes of your own.** Two more themes, *Custom light* and *Custom dark*, are yours to make. Settings ▸ Appearance ▸
+  *Your own themes* opens each one as a list of colors: the page, the text, the accent, the colors of code and more.
+  Set only the ones you care about and Uku works out the rest. It tells you when two colors are too close to read.
 - **High contrast, dark or light.** *High contrast* is black with white text, a yellow accent and a cyan focus ring;
   *High contrast light* is white with black text, dark blue links and a purple focus ring, at 7:1 or more. In both,
   alerts and messages are outlined instead of tinted. Settings ▸ Accessibility ▸ Seeing has a *High contrast* switch.
@@ -33,14 +36,18 @@ otherwise. These are the default shortcuts: you can change any of them in Settin
   the light one for a light contrast theme (such as Windows' *Desert*), the dark one otherwise. On Windows it also takes
   the colors of your contrast theme, wherever they keep enough contrast. On a Mac, *Increase contrast* does the same.
 - **Readable colors.** Text has a contrast of at least 4.5:1 with its background, and the focus ring, borders and other
-  parts at least 3:1, in every theme and with every accent color, including code and its syntax colors.
+  parts at least 3:1, in every theme of Uku's and with every accent color, including code and its syntax colors. A
+  theme you make yourself is as readable as you make it; Uku warns you where its text falls below 4.5:1.
 - **Bigger text.** Ctrl+= and Ctrl+- make the document's text larger or smaller, from 70 % to 400 % (Ctrl+0 goes back
   to 100 %); Ctrl and the mouse wheel, or pinching on a trackpad, do the same (on a Mac, scrolling with two fingers
   while holding ⌘ just scrolls). The new size shows for a moment at the top right of the window. Also in **Aa** ▸
   *Text size* and Settings ▸ Reading. The page reflows to fit the window: even in a narrow window at 400 %, nothing is cut off and only
   wide tables and code scroll sideways. The rest of the window keeps its size.
+- **Bigger menus and sidebar.** Uku's own text (menus, the sidebar, settings) has a size of its own: Settings ▸
+  Appearance ▸ Interface ▸ *Text size*, from 85 % to 150 %.
 - **Fonts.** Settings ▸ Reading ▸ *Font*: Sans, Serif, Mono, Literata, Atkinson Hyperlegible, OpenDyslexic, Andika, or
-  any font installed on your computer. Code has its own font, also in Settings ▸ Reading.
+  any font installed on your computer. Code has its own font, also in Settings ▸ Reading. Uku's own menus and sidebar
+  can be in any installed font too: Settings ▸ Appearance ▸ Interface ▸ *Font*.
 - **Line width.** **Aa** ▸ *Line width*: narrow, medium, wide or the full window.
 - **Text spacing.** Settings ▸ Reading: *Line spacing* (up to 2.4), *Letter spacing* and *Word spacing* (up to 0.12 and
   0.32 of the text's height), and *Paragraph spacing* (up to double). They apply to everything on the page but code, and
@@ -219,8 +226,8 @@ These are known gaps. They're being worked on, and this page changes when each i
 - **The screen reader's voice doesn't switch to a document's language** by itself; Uku says the language instead. (Read
   aloud does switch.)
 - **Read aloud doesn't work on Linux yet**; use your system's own speech there for now.
-- **Your system's text size** (such as Windows' *Text size*) isn't followed by Uku's own buttons and menus yet; the page
-  can be made larger with Ctrl+=.
+- **Your system's text size** (such as Windows' *Text size*) isn't followed by Uku's own buttons and menus yet. You
+  can make them larger yourself, up to 150 %, in Settings ▸ Appearance ▸ Interface, and the page with Ctrl+=.
 - **Animated pictures that flash quickly** aren't detected yet. Set *Animated pictures* to *Click to play* or *Never*
   if flashing affects you.
 
@@ -229,7 +236,7 @@ These are known gaps. They're being worked on, and this page changes when each i
 Before every release, Uku's automated tests check that every control has a name (in English and German) on every
 screen, the roles of the page's headings, lists, tables and other parts, moving by links and headings, with F6 and
 through the list of shortcuts, what
-is read out, contrast in every theme and accent color, colors for every kind of color vision, targets of at least 24
+is read out, contrast in every theme of Uku's and accent color, colors for every kind of color vision, targets of at least 24
 pixels, names that contain their visible words, no animation when motion is reduced, and nothing cut off at large text
 sizes, wide spacing and in a narrow window.
 

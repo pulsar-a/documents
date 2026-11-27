@@ -4,7 +4,7 @@ permalink: /uku/privacy/
 
 # Uku: Privacy Policy
 
-**Last updated: November 11, 2026**
+**Last updated: November 27, 2026**
 
 Uku is a Markdown reader for Windows, macOS and Linux made by Dinar Garipov ("I", "me"). This policy explains what
 happens to your information when you use Uku.
@@ -37,8 +37,8 @@ your computer, and I receive nothing from it.
 
 ## What Uku keeps on your computer
 
-Uku keeps a settings file and, only when something goes wrong, log files in its own folder. Settings ▸ Advanced shows
-where they are and opens them.
+Uku keeps a settings file, the themes you make yourself and, only when something goes wrong, log files in its own
+folder. Settings ▸ Advanced shows where they are and opens them.
 
 | Edition | Folder |
 |---|---|
@@ -51,6 +51,8 @@ where they are and opens them.
   position, the folders of your workspace and the documents you had open, your pinned files and folder colors, your
   list of recent files and folders (their paths on your computer), and your choices for updates, web pictures and AI
   agents. You can clear the recent list in the app (⋯ ▸ Recent ▸ *Clear list*).
+- **Themes of your own** (Settings ▸ Appearance ▸ *Your own themes*), once you make one, are kept as two small files
+  of colors in a `themes` folder there.
 - **Logs** hold warnings and errors with their technical details, which can include the paths of files and folders
   Uku couldn't read, watch or save. Uku writes them only when something goes wrong.
 - **Updates** you download in the editions that update themselves are kept in an `updates` folder there until they are
