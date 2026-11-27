@@ -51,8 +51,8 @@ folder. Settings ▸ Advanced shows where they are and opens them.
   position, the folders of your workspace and the documents you had open, your pinned files and folder colors, your
   list of recent files and folders (their paths on your computer), and your choices for updates, web pictures and AI
   agents. You can clear the recent list in the app (⋯ ▸ Recent ▸ *Clear list*).
-- **Themes of your own** (Settings ▸ Appearance ▸ *Your own themes*), once you make one, are kept as two small files
-  of colors in a `themes` folder there.
+- **Themes of your own** (Settings ▸ Appearance, *Edit* on *Custom light* or *Custom dark*), once you change one, are
+  kept as two small files of colors in a `themes` folder there.
 - **Logs** hold warnings and errors with their technical details, which can include the paths of files and folders
   Uku couldn't read, watch or save. Uku writes them only when something goes wrong.
 - **Updates** you download in the editions that update themselves are kept in an `updates` folder there until they are

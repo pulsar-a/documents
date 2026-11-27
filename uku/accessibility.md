@@ -23,12 +23,16 @@ otherwise. These are the default shortcuts: you can change any of them in Settin
 
 ## See it the way you need
 
-- **Themes.** The **Aa** button in the toolbar, or Settings ▸ Appearance: *System* (the default) follows your system's
-  light or dark setting, or choose *Light*, *Sepia* (warm paper for long reading), *Sage*, *Dusk*, *Dark*, *Espresso*,
-  *Night* (near black), *High contrast* or *High contrast light*. You can also pick an accent color.
-- **Themes of your own.** Two more themes, *Custom light* and *Custom dark*, are yours to make. Settings ▸ Appearance ▸
-  *Your own themes* opens each one as a list of colors: the page, the text, the accent, the colors of code and more.
-  Set only the ones you care about and Uku works out the rest. It tells you when two colors are too close to read.
+- **Light, dark, or as your system is.** The **Aa** button in the toolbar, or Settings ▸ Appearance: choose *Light*,
+  *Dark* or *Follow system* (the default), which is light while your system is light and dark while it is dark.
+- **Themes.** Each side has its own themes, and you choose one for each: *Light*, *Sepia* (warm paper for long
+  reading), *Sage* or *High contrast light*; and *Dusk*, *Dark*, *Espresso*, *Night* (near black) or *High contrast*.
+  With *Follow system*, Uku shows your light theme by day and your dark one at night, as your system changes. You can
+  also pick an accent color.
+- **Themes of your own.** The last theme of each side, *Custom light* and *Custom dark*, is yours to make. *Edit* on
+  its picture in Settings ▸ Appearance opens its colors: the page, the text, the accent, the colors of code and more.
+  Click a color to pick it with a color picker, or write it as text; what you change shows at once. Set only the
+  colors you care about and Uku works out the rest. It tells you when two colors are too close to read.
 - **High contrast, dark or light.** *High contrast* is black with white text, a yellow accent and a cyan focus ring;
   *High contrast light* is white with black text, dark blue links and a purple focus ring, at 7:1 or more. In both,
   alerts and messages are outlined instead of tinted. Settings ▸ Accessibility ▸ Seeing has a *High contrast* switch.
